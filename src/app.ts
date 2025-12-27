@@ -27,7 +27,7 @@ if (env.NODE_ENV === 'development') {
 
 // Routes
 app.use('/api/users', userRoutes);
-app.use('/api/transactions/quick-transaction-list', quickTransactionsRoutes);
+app.use('/api/transactions/quick-transaction', quickTransactionsRoutes);
 
 // Health check
 app.get('/health', (req, res) => {

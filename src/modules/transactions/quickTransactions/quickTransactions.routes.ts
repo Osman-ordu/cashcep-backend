@@ -1,9 +1,11 @@
 import { Router } from 'express';
-import quickTransactionsController from './quickTransactions.controller';
+import { getQuickTransactions } from './controllers/getQuickTransactions.controller';
+import { createQuickTransaction } from './controllers/createQuickTransaction.controller';
 
 const router = Router();
 
-router.get('/', quickTransactionsController.getQuickTransactions.bind(quickTransactionsController));
+router.get('/', getQuickTransactions);
+router.post('/', createQuickTransaction);
 
 export default router;
 
