@@ -5,6 +5,7 @@ export class QuickTransactionsService {
     // Mock data - gerçek uygulamada veritabanından veya API'den çekilebilir
     const transactions: QuickTransaction[] = [
       {
+        id: '1',
         baseAsset: 'TRY',
         quoteAsset: 'USD',
         amount: 100,
@@ -12,6 +13,7 @@ export class QuickTransactionsService {
         total: 4200,
       },
       {
+        id: '2',
         baseAsset: 'TRY',
         quoteAsset: 'EUR',
         amount: 100,
